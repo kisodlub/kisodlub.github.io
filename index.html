@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cello Performances</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .painting {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .painting img {
+            width: 100%;
+            height: auto;
+        }
+        .painting h3 {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
-
-<body> 
-    <header >
-        <h1>Welcome to My Cello Performances</h1>
-        <p>Discover my journey through music</p>
+<body>
+    <header>
+        <h1>Welcome to My Art Gallery</h1>
     </header>
-
-    <main>
-        <section class="gallery">
-            <h2>Performance Gallery</h2>
-            <div class="gallery-container">
-                <div class="performance">
-                    <img src="performance1.jpg" alt="Cello performance at the concert">
-                    <p>Concert at the Symphony Hall</p>
-                    <p>Date: April 15, 2023</p>
-                </div>
-                <div class="performance">
-                    <img src="performance2.jpg" alt="Cello performance at the wedding">
-                    <p>Wedding Ceremony</p>
-                    <p>Date: June 10, 2023</p>
-                </div>
-                <div class="performance">
-                    <img src="performance3.jpg" alt="Solo cello performance">
-                    <p>Solo Performance at the Local Theater</p>
-                    <p>Date: September 22, 2023</p>
-                </div>
-                <!-- Add more performances as needed -->
+    <div class="container">
+        <div class="intro">
+            <h2>About Me</h2>
+            <p>I'm a passionate artist who loves to express emotions through colors and shapes. Explore my paintings to see my journey!</p>
+        </div>
+        <div class="gallery">
+            <div class="painting">
+                <img src="path/to/your/painting1.jpg" alt="Painting 1">
+                <h3>Title of Painting 1</h3>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2023 Your Name. All rights reserved.</p>
-        <p>Follow me on social media: 
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
-            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
-        </p>
-    </footer>
-
+            <div class="painting">
+                <img src="path/to/your/painting2.jpg" alt="Painting 2">
+                <h3>Title of Painting 2</h3>
+            </div>
+            <div class="painting">
+                <img src="path/to/your/painting3.jpg" alt="Painting 3">
+                <h3>Title of Painting 3</h3>
+            </div>
+            <div class="painting">
+                <img src="path/to/your/painting4.jpg" alt="Painting 4">
+                <h3>Title of Painting 4</h3>
+            </div>
+            <!-- Add more paintings as needed -->
+        </div>
+    </div>
 </body>
-
-    
 </html>
