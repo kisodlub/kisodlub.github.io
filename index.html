@@ -9,75 +9,86 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 10px 0;
             text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        .intro {
-            text-align: center;
-            margin: 20px 0;
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
         .painting {
-            background-color: white;
-            border: 1px solid #ddd;
+            margin: 15px;
+            border: 1px solid #ccc;
             border-radius: 5px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.2s;
+        }
+        .painting:hover {
+            transform: scale(1.05);
         }
         .painting img {
             width: 100%;
             height: auto;
         }
-        .painting h3 {
-            padding: 10px;
+        footer {
             text-align: center;
-            font-size: 1.2em;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Art Gallery</h1>
-    </header>
-    <div class="container">
-        <div class="intro">
-            <h2>About Me</h2>
-            <p>I'm a passionate artist who loves to express emotions through colors and shapes. Explore my paintings to see my journey!</p>
-        </div>
-        <div class="gallery">
-            <div class="painting">
-                <img src="path/to/your/painting1.jpg" alt="Painting 1">
-                <h3>Title of Painting 1</h3>
-            </div>
-            <div class="painting">
-                <img src="path/to/your/painting2.jpg" alt="Painting 2">
-                <h3>Title of Painting 2</h3>
-            </div>
-            <div class="painting">
-                <img src="path/to/your/painting3.jpg" alt="Painting 3">
-                <h3>Title of Painting 3</h3>
-            </div>
-            <div class="painting">
-                <img src="path/to/your/painting4.jpg" alt="Painting 4">
-                <h3>Title of Painting 4</h3>
-            </div>
-            <!-- Add more paintings as needed -->
-        </div>
+
+<header>
+    <h1>Welcome to My Art Gallery!</h1>
+    <p>Explore my collection of paintings</p>
+</header>
+
+<section class="gallery">
+    <div class="painting">
+        <img src="painting1.jpg" alt="Painting 1">
+        <p>Title: Sunset Bliss</p>
     </div>
+    <div class="painting">
+        <img src="painting2.jpg" alt="Painting 2">
+        <p>Title: Tranquil Forest</p>
+    </div>
+    <div class="painting">
+        <img src="painting3.jpg" alt="Painting 3">
+        <p>Title: Ocean Waves</p>
+    </div>
+    <div class="painting">
+        <img src="painting4.jpg" alt="Painting 4">
+        <p>Title: Starry Night</p>
+    </div>
+    <!-- Add more paintings as needed -->
+</section>
+
+<footer>
+    <p>Connect with me on <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a> | 
+       <a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a> | 
+       <a href="mailto:your.email@example.com">Contact Me</a>
+    </p>
+</footer>
+
 </body>
 </html>
